@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Funny English</display-name>
+  <servlet>
+    <servlet-name>WordListServlet</servlet-name>
+    <servlet-class>com.product.register.action.WordListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WordListServlet</servlet-name>
+    <url-pattern>/wordList</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>WordAddServlet</servlet-name>
+    <servlet-class>com.product.register.action.WordAddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WordAddServlet</servlet-name>
+    <url-pattern>/wordAdd</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>WordDelServlet</servlet-name>
+    <servlet-class>com.product.register.action.WordDelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WordDelServlet</servlet-name>
+    <url-pattern>/wordDel</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>WordSearchServlet</servlet-name>
+    <servlet-class>com.product.register.action.WordSearchServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WordSearchServlet</servlet-name>
+    <url-pattern>/wordSearch</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>RegisterUserServlet</servlet-name>
+    <servlet-class>com.product.register.action.RegisterUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterUserServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
